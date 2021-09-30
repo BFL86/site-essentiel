@@ -1,66 +1,306 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Parteunariat</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-    <header class="row">
-        <div class="col-1 menu">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="accueil.html" title="Accueil">&#9776</a>
-                        <ul class="sub_menu">
-                            <li><a href="a-propo.html" title="APropos">À propos</a></li>
-                            <li><a href="vocon.html" title="VotreConseillère">Votre conseillère</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="row mb-5">
+      <nav class="flex navbar navbar-light bg-gris fixed-top">
+        <div class="flexGauche">
+          <button
+            class="navbar-toggler sizeBtn bg-green"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
-        <h1 class="col-11 text-center menuDroite">Vive le bien-être - Parteunariat (Accueil)</h1>
+        <div class="flexDroite">
+          <div class="bg-gris text-center">
+            <h1>Vive le bien-être - Parteunariat</h1>
+          </div>
+          <div
+            class="offcanvas offcanvas-start bg-green"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                  >
+                    Accueil
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="apropos.html">À propos</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="votreConseillere.html"
+                    >Votre conseillère</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
-    <section>
-        <img src="/image/logo.jpg" loading="lazy" height="100" width="100" alt="">
-    </section>
-    <div class="container">
-    <div class="parallax"></div>
-    <div class="">
-        <img src="/image/image11.PNG" loading="lazy" alt="">
-            <p>
-                Vous pourrez bénéficier d'une marge allant jusqu'à 40% sur les produits que vous vendrez, et vous aurez également le droit à différents bonus en fonction du nombre de ventes que vous réaliserez.
-            </p>
+    <div class="text-center mb-2">
+      <img
+        style="margin-top: 2vh"
+        src="/image/logo.jpg"
+        loading="lazy"
+        height="100"
+        width="100"
+        alt=""
+      />
     </div>
-    <div class="parallax2"></div>
-    <div class="">
-        <font size="+3">
-            <p>
-                Vous bénéficierez également d'un bonus pour acheter une voiture de fonction qui augmentra au fur et à mesure que vous ferez évoluer votre activité.
-            </p>
-        </font>
-        <img src="/image/image12.PNG" loading="lazy" alt="">
-    </div>
-    <hr>
-    <div class="">
-        <img src="/image/image13.PNG" loading="lazy" alt="">
-        <font size="+3">
-            <p>
-                Ivestissez-vous autant que possible, LR récompensera toujours votre travail à mesure que vous vous montrerez méritant(e).
-            </p>
-        </font>
-    </div>
-</div>
-    <footer>
-    <p>
-        Ce site n'est pas adapté à l'utilisation sur téléphone portable, veuillez utiliser un ordinateur pour en consulter le contenu. Merci d'avance.
+    <p class="text-center">
+      En cliquant sur les éléments de la barre de navigation, vous serez
+      reconduis sur la boutique officiele de votre conseillère.
     </p>
-</footer>
+    <div class="container">
+      <section></section>
+      <div class="parallax"></div>
+      <div class="d-flex justify-content-center">
+        <ul class="list-group list-group-horizontal-md">
+          <a
+            href="https://shop.lrworld.com/cms/FR/fr/nutrition/nutrition.html"
+            class="text-decoration-none"
+            target="_blank"
+          >
+            <li class="list-group-item bg-gris2">Nutrition</li>
+          </a>
+          <a
+            href="https://shop.lrworld.com/cms/FR/fr/nutrition/nutrition.html"
+            class="text-decoration-none"
+            target="_blank"
+          >
+            <li class="list-group-item bg-gris2">Nutricosmétique</li>
+          </a>
+          <a
+            href="https://shop.lrworld.com/cms/FR/fr/silhouette/silhouette.html"
+            class="text-decoration-none"
+            target="_blank"
+          >
+            <li class="list-group-item bg-gris2">Silhouette</li>
+          </a>
+          <a
+            href="https://shop.lrworld.com/cms/FR/fr/soins/soins.html"
+            class="text-decoration-none"
+            target="_blank"
+          >
+            <li class="list-group-item bg-gris2">Soins</li>
+          </a>
+          <a
+            href="https://shop.lrworld.com/cms/FR/fr/parfum/parfum.html"
+            class="text-decoration-none"
+            target="_blank"
+          >
+            <li class="list-group-item bg-gris2">Parfum</li>
+          </a>
+          <a
+            href="https://shop.lrworld.com/cms/FR/fr/maquillage/maquillage.html"
+            class="text-decoration-none"
+            target="_blank"
+          >
+            <li class="list-group-item bg-gris2">Maquillage</li>
+          </a>
+          <a
+            href="https://shop.lrworld.com/cms/FR/fr/promotions/promotions.html"
+            class="text-decoration-none"
+            target="_blank"
+          >
+            <li class="list-group-item bg-gris2">Promotions</li>
+          </a>
+        </ul>
+      </div>
+      <!-- <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a
+              href="https://shop.lrworld.com/cms/FR/fr/nutrition/nutrition.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                loading="lazy"
+                src="/image/image8.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <img
+              loading="lazy"
+              src="/image/image2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              loading="lazy"
+              src="/image/image3.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> -->
 
-</body>
+      <div class="row mt-3">
+        <div class="col-md">
+          <a href="/image/image11.PNG" target="_blank">
+            <img
+              src="/image/image11.PNG"
+              loading="lazy"
+              height="320"
+              alt=""
+              class="img-fluid mx-auto"
+            />
+          </a>
+        </div>
+        <div class="col-md text-center my-auto">
+          <p>
+            Vous pourrez bénéficier d'une marge allant jusqu'à 40% sur les
+            produits que vous vendrez et acheterez (que ce soit en tant que
+            parteunaire ou client privilgié), et vous aurez également le droit,
+            en tant que parteunaire, à différents bonus en fonction du nombre de
+            ventes que vous réaliserez.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-md text-center my-auto">
+          <p>
+            Vous bénéficierez également d'un bonus pour acheter une voiture de
+            fonction qui augmentra au fur et à mesure que vous ferez évoluer
+            votre activité.
+          </p>
+        </div>
+        <div class="col">
+          <a href="/image/image12.PNG" target="_blank">
+            <img
+              src="/image/image12.PNG"
+              loading="lazy"
+              height="240"
+              alt=""
+              class="img-fluid mx-auto"
+            />
+          </a>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-md">
+          <a href="/image/image13.PNG" target="_blank">
+            <img
+              src="/image/image13.PNG"
+              loading="lazy"
+              height="240"
+              alt=""
+              class="img-fluid mx-auto"
+            />
+          </a>
+        </div>
+        <div class="col-md text-center my-auto">
+          <p>
+            Ivestissez-vous autant que possible, LR récompensera toujours votre
+            travail à mesure que vous vous montrerez méritant(e).
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer class="container">
+      <p>footer</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

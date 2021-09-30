@@ -1,0 +1,60 @@
+.bg-green {
+  background-color: #93b390;
+  color: #fff;
+}
+.bg-gris2 {
+  background: #c4c4c4;
+}
+nav {
+  padding: 0px;
+}
+.navbar {
+  padding: 0;
+}
+.bg-gris {
+  background: #9b8989;
+  color: #fff;
+}
+.flex {
+  display: flex;
+}
+.flexGauche {
+  width: 5vw;
+}
+.flexDroite {
+  width: 94vw;
+}
+.sizeBtn {
+  height: 100%;
+  width: 5vw;
+  min-width: 35px;
+  font-size: 30px;
+}
+@media screen and (max-width: 1200px) {
+  .flexDroite {
+    width: 80vw;
+  }
+  .flexDroite h1 {
+    font-size: 30px;
+  }
+  .flexGauche {
+    width: 10vw;
+  }
+  .flexGauche button {
+    width: 10vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  .flexDroite {
+    width: 80vw;
+  }
+  .flexDroite h1 {
+    font-size: 18px;
+  }
+  .flexGauche {
+    width: 18vw;
+  }
+  .flexGauche button {
+    width: 18vw;
+  }
+}
